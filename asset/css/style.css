@@ -4,6 +4,10 @@
 :root {
   --primary-color: #0f1b4c;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
 }
@@ -11,6 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
 /* ===============  Common  =============== */
 .content {
   width: 1110px;
@@ -39,6 +44,7 @@ a {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 /* ===============  Header  =============== */
 .fixed-header {
   background-color: #e6f0ff;
@@ -52,8 +58,9 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #e6f0ff;
-  height: 100vh;
+  height: calc(100vh - 90px);
 }
+
 /* ===============  Navbar  =============== */
 .navbar {
   display: flex;
